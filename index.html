@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KanjiDic</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- external fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400italic">
+        <link rel="stylesheet" href="css/default.css">
+
+        <script type="text/x-rhu-config">
+        RHU.config = {
+            modules: ["macro", "weak", "event"],
+            extensions: ["rhu/theme"]
+        };
+        </script>
+        <script type="text/javascript" src="RHU/RHU.js"></script>
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="theme.js"></script>
+    </head>
+    <body class="js-duqaTheme">
+        <div style="padding: 10px; height: 100%;">
+            <label for="kanjidic">kanjidic.xml:</label><br>
+            <input id="kanjidic" type="file"><br><br>
+            <label for="kanjivg">kanjivg.xml:</label><br>
+            <input id="kanjivg" type="file"><br><br>
+            <button id="load" style="display: none; background-color: #ddd; padding: 5px 20px; border-radius: 10px;">
+                Start
+            </button>
+        </div>
+    </body>
+</html>
